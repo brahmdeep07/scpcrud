@@ -1,0 +1,200 @@
+/* Import modern font */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800&display=swap');
+
+/* === Base Reset === */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* === Container === */
+.app {
+  max-width: 960px;
+  width: 90%;
+  padding: 2.5rem;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 12px 12px 24px #d6dbe0, -12px -12px 24px #ffffff;
+}
+
+/* === Navigation === */
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid #e2e6ea;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+nav h2 {
+  font-size: 2.4rem;
+  color: #ff6b6b;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+nav button {
+  margin-top: 1rem;
+}
+
+/* === Button Styles === */
+button {
+  background-color: #d11db3;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  box-shadow: 4px 4px 8px #c8ccd0, -4px -4px 8px #ffffff;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #10ac84;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+/* === Detail Card === */
+.detail {
+  background: #fefefe;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  box-shadow: inset 6px 6px 12px #e1e5e9, inset -6px -6px 12px #ffffff;
+  animation: slideIn 0.4s ease forwards;
+}
+
+.detail h2 {
+  font-size: 2rem;
+  color: #ff6b6b;
+  margin-bottom: 0.5rem;
+}
+
+.detail h4 {
+  color: #2ecc71;
+  font-style: italic;
+  font-weight: 500;
+  margin-top: 0.2rem;
+}
+
+.detail img {
+  max-width: 70%;
+  border-radius: 12px;
+  margin: 1rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.detail p {
+  max-width: 85%;
+  margin: 1rem auto;
+  color: #555;
+  font-size: 1.05rem;
+}
+
+/* === Admin Panel === */
+.admin {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 12px 12px 24px #d6dbe0, -12px -12px 24px #ffffff;
+  text-align: center;
+}
+
+.admin h2 {
+  font-size: 1.8rem;
+  color: #1e90ff;
+  margin-bottom: 1.2rem;
+}
+
+/* === Table === */
+table {
+  width: 90%;
+  margin: 1.5rem auto;
+  border-collapse: collapse;
+  font-size: 1rem;
+  color: #444;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: left;
+}
+
+th {
+  background: #f9f9f9;
+  font-weight: 700;
+  color: #333;
+}
+
+td img {
+  max-width: 50px;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* === Form === */
+.form {
+  margin: 2rem auto;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  background: #f1f3f5;
+  box-shadow: inset 3px 3px 6px #d1d5d9, inset -3px -3px 6px #ffffff;
+  font-size: 1rem;
+  color: #333;
+}
+
+.form input::placeholder {
+  color: #aaa;
+}
+
+.form input:focus {
+  outline: none;
+  background-color: #fff;
+  box-shadow: inset 1px 1px 3px #d0d4d8, inset -1px -1px 3px #ffffff;
+}
+
+.form button {
+  margin-top: 0.8rem;
+}
+
+/* === Animation === */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
